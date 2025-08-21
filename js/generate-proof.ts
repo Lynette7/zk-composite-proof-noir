@@ -10,9 +10,9 @@ import { Noir } from "@noir-lang/noir_js";
     const honk = new UltraHonkBackend(circuit.bytecode, { threads: 1 });
 
     const inputs = {
-      a: 5,
-      b: 7,
-      n: 35
+      a: 7,
+      b: 19,
+      n: 133
     };
 
     const { witness } = await noir.execute(inputs);

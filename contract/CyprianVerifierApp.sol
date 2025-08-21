@@ -24,7 +24,7 @@ contract CyprianVerifierApp {
 
     function verifyEqual(bytes calldata proof, bytes32[] calldata publicInputs) public returns (bool) {
         bool proofResult = verifier.verify(proof, publicInputs);
-        require(publicInputs.length == 1, "Expected 1 public inputs: 2");
+        require(publicInputs.length == 1, "Expected 1 public inputs: 133");
         require(proofResult, "Proof is not valid");
         verifiedCount++;
         emit ProofVerified(msg.sender, verifiedCount);
